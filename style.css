@@ -1,3 +1,4 @@
+/* General body */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f0f4f8;
@@ -26,7 +27,7 @@ header p {
 
 /* Sections */
 section {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 40px auto;
     padding: 25px;
     background: white;
@@ -36,47 +37,80 @@ section {
 
 section h2 {
     color: #34495e;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-/* Ordered list with icons and hover effect */
-ol {
-    list-style: none;
-    padding-left: 0;
-}
-
-ol li {
+/* Timeline container */
+.timeline-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     position: relative;
-    padding-left: 40px;
-    margin: 15px 0;
-    font-size: 1.1em;
-    transition: transform 0.3s, color 0.3s;
+    padding: 20px 0;
 }
 
-ol li i {
+.timeline-container::before {
+    content: '';
     position: absolute;
-    left: 0;
     top: 50%;
-    transform: translateY(-50%);
-    font-size: 1.5em;
-    color: #3498db;
-}
-
-ol li:hover {
-    transform: translateX(5px);
-    color: #e67e22;
-}
-
-/* Timeline image */
-.responsive-img {
+    left: 0;
     width: 100%;
-    max-width: 850px;
-    height: auto;
-    display: block;
-    margin: 20px auto;
+    height: 4px;
+    background: #bdc3c7;
+    transform: translateY(-50%);
+    z-index: 0;
 }
 
-/* Google Form button */
+/* Timeline step */
+.timeline-step {
+    position: relative;
+    z-index: 1;
+    flex: 1 1 120px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 0;
+    transition: transform 0.3s, background 0.3s;
+    border-radius: 10px;
+}
+
+.timeline-step i {
+    font-size: 2em;
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 50%;
+    background: #3498db;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.timeline-step p {
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Color coding */
+.step1 i { background: #1abc9c; }
+.step2 i { background: #2ecc71; }
+.step3 i { background: #3498db; }
+.step4 i { background: #9b59b6; }
+.step5 i { background: #e67e22; }
+.step6 i { background: #e74c3c; }
+.step7 i { background: #f1c40f; color: #2c3e50; }
+.step8 i { background: #34495e; }
+
+/* Hover effect */
+.timeline-step:hover {
+    transform: translateY(-10px);
+}
+.timeline-step:hover i {
+    transform: scale(1.2);
+}
+
+/* Suggestions button */
 .form-button {
     display: inline-block;
     padding: 12px 25px;
@@ -85,11 +119,12 @@ ol li:hover {
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.3s;
 }
 
 .form-button:hover {
     background: #2980b9;
+    transform: translateY(-3px);
 }
 
 /* Footer */
@@ -102,17 +137,20 @@ footer {
     font-size: 0.9em;
 }
 
-/* Responsive adjustments */
+/* Responsive */
 @media (max-width: 768px) {
-    header h1 { font-size: 2.2em; }
-    header p { font-size: 1.1em; }
-    section { margin: 20px; padding: 20px; }
+    .timeline-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timeline-step {
+        margin: 15px 0;
+    }
 }
 
 @media (max-width: 480px) {
-    header h1 { font-size: 1.8em; }
+    header h1 { font-size: 2em; }
     header p { font-size: 1em; }
-    section { margin: 15px; padding: 15px; }
-    ol li { font-size: 1em; }
-    ol li i { font-size: 1.3em; }
+    .timeline-step i { font-size: 1.5em; padding: 12px; }
 }
