@@ -17,7 +17,7 @@ github-pages/
 
 ---
 
-🧭 DevOps Learning Roadmap
+## 🧭 DevOps Learning Roadmap
 
 This website provides a step-by-step guide for anyone who wants to start and grow in DevOps:
 
@@ -39,7 +39,7 @@ This website provides a step-by-step guide for anyone who wants to start and gro
 
 ---
 
-📸 Visual Timeline
+## 📸 Visual Timeline
 
 The roadmap is also represented as an interactive timeline with tool icons:
 
@@ -51,25 +51,25 @@ Makes roadmap easier to visualize for beginners.
 
 ---
 
-💬 Share Your Suggestions
+## 💬 Share Your Suggestions
 
 We welcome ideas, resources, and suggestions related to DevOps learning.
 Please submit your feedback here: https://forms.gle/anoWE8frdUzarNfq8
 
-Form description:
+**Form description:**
 This form is for collecting ideas, resources, and suggestions related to the DevOps learning journey. Your feedback will help explore new tools, practices, and projects.
 
 ---
 
-🚀 Deployment Steps
+## 🚀 Deployment Steps
 
-Create Website Files
+**Create Website Files**
 
 index.html → homepage
 
 style.css → styles for the page
 
-Push to GitHub
+**Push to GitHub**
 
 git init
 git add .
@@ -79,7 +79,7 @@ git remote add origin https://github.com/kshitija-0710/github-pages.git
 git push -u origin main
 
 
-Enable GitHub Pages
+**Enable GitHub Pages**
 
 Go to Repo → Settings → Pages
 
@@ -95,7 +95,7 @@ Example: https://kshitija-0710.github.io/github-pages/
 
 ---
 
-🎨 Customization
+## 🎨 Customization
 
 Edit index.html to add new sections
 
@@ -105,15 +105,15 @@ Add more pages (e.g., about.html) and link them
 
 ---
 
-📌 Interview Questions
+## 📌 Interview Questions
 
-What is GitHub Pages?
+**What is GitHub Pages?**
 Free static site hosting service by GitHub.
 
-Can you host dynamic apps here?
+**Can you host dynamic apps here?**
 ❌ No, only static content (HTML, CSS, JS).
 
-What are the limits of GitHub Pages?
+**What are the limits of GitHub Pages?**
 
 Repo size ≤ 1 GB
 
@@ -121,21 +121,21 @@ File size ≤ 100 MB
 
 100 builds/hour
 
-How do you update the website?
+**How do you update the website?**
 Push new commits to the repo → Pages auto-deploys.
 
-What happens when you delete the repo?
+**What happens when you delete the repo?**
 The hosted site is removed.
 
-What is the default file that loads?
+**What is the default file that loads?**
 index.html.
 
-Can you use a custom domain?
+**Can you use a custom domain?**
 ✅ Yes, by configuring DNS and adding it in repo settings.
 
 ---
 
-✨ This site is built as a reference for anyone learning DevOps and hosted for free using GitHub Pages.
+**✨ This site is built as a reference for anyone learning DevOps and hosted for free using GitHub Pages.**
 
 
 ---
