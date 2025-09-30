@@ -1,43 +1,39 @@
-/* Body & Fonts */
+/* General Styles */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f4f7fa;
-  color: #2c3e50;
   margin: 0;
   padding: 0;
+  background: #f5f6fa;
+  color: #2c3e50;
 }
 
-/* Header */
 header {
-  text-align: center;
-  padding: 60px 20px;
-  background: linear-gradient(90deg, #3498db, #9b59b6);
+  background: #34495e;
   color: white;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-header h1 { 
-  margin: 0; 
-  font-size: 3em; 
-}
-header p { 
-  margin-top: 10px; 
-  font-size: 1.3em; 
+  text-align: center;
+  padding: 40px 20px;
 }
 
-/* Sections */
-section {
-  max-width: 1100px;
-  margin: 50px auto;
-  padding: 40px;
-  background: #ffffff;
-  border-radius: 15px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
 }
+
+header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
 section h2 {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   color: #34495e;
-  font-size: 2em;
 }
 
 /* Horizontal Timeline */
@@ -50,6 +46,7 @@ section h2 {
   padding: 20px 0;
   position: relative;
 }
+
 .timeline-horizontal::before {
   content: '';
   position: absolute;
@@ -61,22 +58,15 @@ section h2 {
   transform: translateY(-50%);
   z-index: 0;
 }
+
 .timeline-item {
   flex: 0 0 auto;
   text-align: center;
-  margin: 0 20px;
+  margin: 0 15px;
   position: relative;
   z-index: 1;
-  background: #f0f4f8;
-  padding: 15px 10px;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
 }
-.timeline-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-}
+
 .timeline-item i {
   font-size: 3em;
   display: block;
@@ -88,73 +78,47 @@ section h2 {
 }
 
 /* Color-coded icons */
-.timeline-item:nth-child(1) i { background: #1abc9c; }
-.timeline-item:nth-child(2) i { background: #2ecc71; }
-.timeline-item:nth-child(3) i { background: #3498db; }
-.timeline-item:nth-child(4) i { background: #9b59b6; }
-.timeline-item:nth-child(5) i { background: #e67e22; }
-.timeline-item:nth-child(6) i { background: #e74c3c; }
-.timeline-item:nth-child(7) i { background: #f1c40f; color: #2c3e50; }
-.timeline-item:nth-child(8) i { background: #34495e; }
+.timeline-item:nth-child(1) i { background: #1abc9c; } /* Linux */
+.timeline-item:nth-child(2) i { background: #2ecc71; } /* Git */
+.timeline-item:nth-child(3) i { background: #3498db; } /* Docker */
+.timeline-item:nth-child(4) i { background: #9b59b6; } /* Kubernetes */
+.timeline-item:nth-child(5) i { background: #e67e22; } /* CI/CD */
+.timeline-item:nth-child(6) i { background: #e74c3c; } /* Terraform */
+.timeline-item:nth-child(7) i { background: #f1c40f; color: #2c3e50; } /* Monitoring */
+.timeline-item:nth-child(8) i { background: #34495e; } /* Cloud */
 
+/* Hover Effect */
+.timeline-item:hover i {
+  transform: scale(1.2);
+}
+
+/* Timeline labels */
 .timeline-item p {
   font-weight: bold;
   margin: 0;
-  max-width: 150px;
-  font-size: 1em;
+  max-width: 140px;
 }
 
-/* Suggestions Section */
-.suggestions {
-  text-align: center;
-}
-.suggestions p {
-  margin-bottom: 20px;
-  font-size: 1.1em;
-  color: #34495e;
-}
-iframe {
-  border-radius: 12px;
-  border: 2px solid #3498db;
-  max-width: 100%;
+/* Google Form iframe */
+.suggestions iframe {
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding: 25px;
+  padding: 20px;
   background: #34495e;
   color: white;
-  margin-top: 50px;
-  font-size: 0.95em;
-}
-
-/* Form Button */
-.form-button {
-  display: inline-block;
-  padding: 12px 25px;
-  background: #3498db;
-  color: white;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s, transform 0.3s;
-}
-.form-button:hover { 
-  background: #2980b9; 
-  transform: translateY(-3px); 
 }
 
 /* Responsive */
 @media (max-width: 992px) {
   .timeline-horizontal { overflow-x: scroll; }
 }
+
 @media (max-width: 768px) {
   .timeline-horizontal { flex-wrap: wrap; justify-content: center; }
   .timeline-item { margin: 15px; }
-}
-@media (max-width: 480px) {
-  header h1 { font-size: 2em; }
-  header p { font-size: 1em; }
-  .timeline-item i { font-size: 2em; padding: 15px; }
 }
