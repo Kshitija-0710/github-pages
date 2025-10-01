@@ -1,121 +1,122 @@
-/* General Reset */
-* {
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
-}
-
-body {
-  background: #f0f4f8;
+  background: #f4f6f8;
   color: #2c3e50;
-  line-height: 1.6;
 }
 
-h1, h2, h3 {
+header {
   text-align: center;
-  margin-bottom: 15px;
+  padding: 40px 20px;
+  background: #34495e;
+  color: #fff;
 }
 
-.container {
-  width: 90%;
-  max-width: 1000px;
-  margin: auto;
-  padding: 20px;
+header h1 {
+  margin-bottom: 10px;
 }
 
-/* Timeline */
-.timeline {
-  position: relative;
-  margin: 40px auto;
-  padding-left: 60px;
-  border-left: 4px solid #3498db;
+header p {
+  font-size: 1.1em;
 }
 
-.timeline-step {
-  position: relative;
+/* Timeline Vertical */
+.timeline-section {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.timeline-section h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.timeline-intro {
+  text-align: center;
   margin-bottom: 40px;
+  font-style: italic;
+}
+
+.timeline-vertical {
+  position: relative;
+  margin-left: 20px;
   padding-left: 40px;
-  opacity: 0;
-  transform: translateX(-50px);
-  transition: all 0.8s ease-out;
 }
 
-.timeline-step.visible {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.timeline-step::before {
-  content: "";
+.timeline-vertical::before {
+  content: '';
   position: absolute;
-  left: -40px;
-  top: 5px;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #3498db;
-  border: 3px solid #fff;
-  box-shadow: 0 0 0 3px #3498db33;
+  left: 20px;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #bdc3c7;
 }
 
-.timeline-step:nth-child(1)::before { background: #1abc9c; }
-.timeline-step:nth-child(2)::before { background: #2ecc71; }
-.timeline-step:nth-child(3)::before { background: #3498db; }
-.timeline-step:nth-child(4)::before { background: #9b59b6; }
-.timeline-step:nth-child(5)::before { background: #e67e22; }
-.timeline-step:nth-child(6)::before { background: #e74c3c; }
-.timeline-step:nth-child(7)::before { background: #f1c40f; }
-.timeline-step:nth-child(8)::before { background: #34495e; }
-
-.timeline-step h3 {
-  font-size: 1.2rem;
-  color: #2c3e50;
-  margin-bottom: 8px;
-}
-
-.timeline-step ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.timeline-step ul li {
-  margin: 5px 0;
-  padding-left: 20px;
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
   position: relative;
 }
 
-.timeline-step ul li::before {
-  content: "✔";
-  position: absolute;
-  left: 0;
-  color: #3498db;
-  font-size: 0.9em;
+.timeline-item i {
+  font-size: 2em;
+  background: #3498db;
+  color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  margin-right: 20px;
+  flex-shrink: 0;
+  transition: transform 0.3s;
 }
 
-/* Google Form */
-iframe {
-  width: 100%;
-  border: none;
-  margin-top: 20px;
+/* Color-coded icons */
+.timeline-item:nth-child(1) i { background: #1abc9c; }
+.timeline-item:nth-child(2) i { background: #2ecc71; }
+.timeline-item:nth-child(3) i { background: #3498db; }
+.timeline-item:nth-child(4) i { background: #9b59b6; }
+.timeline-item:nth-child(5) i { background: #e67e22; }
+.timeline-item:nth-child(6) i { background: #e74c3c; }
+.timeline-item:nth-child(7) i { background: #f1c40f; color: #2c3e50; }
+.timeline-item:nth-child(8) i { background: #34495e; }
+
+/* Hover effect */
+.timeline-item:hover i { transform: scale(1.2); }
+
+.timeline-content h3 {
+  margin: 0 0 5px;
+  color: #34495e;
 }
 
-/* Footer */
+.timeline-content ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.suggestion-form {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.suggestion-form h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
 footer {
   text-align: center;
-  margin-top: 40px;
-  padding: 15px;
-  font-size: 0.9rem;
-  color: #555;
+  padding: 30px 20px;
+  background: #34495e;
+  color: #fff;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .timeline {
-    padding-left: 40px;
-  }
-
-  .timeline-step::before {
-    left: -30px;
-  }
+footer p img {
+  margin-bottom: 10px;
 }
