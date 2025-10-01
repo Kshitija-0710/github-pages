@@ -14,101 +14,117 @@
     <p>A step-by-step guide for beginners to start their DevOps journey 🚀</p>
   </header>
 
-  <section class="roadmap">
-    <div class="step linux">
-      <i class="fas fa-terminal"></i>
-      <h3>Step 1: Linux Basics & Scripting</h3>
-      <ul>
-        <li>Learn file system navigation (<code>ls, cd, pwd</code>)</li>
-        <li>Understand permissions (<code>chmod, chown</code>)</li>
-        <li>Practice shell scripting (variables, loops, conditions)</li>
-        <li>Automate tasks with cron jobs</li>
-      </ul>
+  <section class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-terminal"></i></div>
+      <div class="timeline-content">
+        <h3>Step 1: Linux Basics & Scripting</h3>
+        <ul>
+          <li>Learn file system navigation (<code>ls, cd, pwd</code>)</li>
+          <li>Understand permissions (<code>chmod, chown</code>)</li>
+          <li>Practice shell scripting (variables, loops, conditions)</li>
+          <li>Automate tasks with cron jobs</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="step git">
-      <i class="fab fa-git-alt"></i>
-      <h3>Step 2: Git & GitHub</h3>
-      <ul>
-        <li>Learn version control basics (<code>git init, git add, git commit</code>)</li>
-        <li>Branching & merging</li>
-        <li>Working with GitHub (fork, pull request, issues)</li>
-        <li>Collaboration best practices</li>
-      </ul>
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fab fa-git-alt"></i></div>
+      <div class="timeline-content">
+        <h3>Step 2: Git & GitHub</h3>
+        <ul>
+          <li>Learn version control basics (<code>git init, git add, git commit</code>)</li>
+          <li>Branching & merging</li>
+          <li>Working with GitHub (fork, pull request, issues)</li>
+          <li>Collaboration best practices</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="step docker">
-      <i class="fab fa-docker"></i>
-      <h3>Step 3: Docker & Containerization</h3>
-      <ul>
-        <li>Learn Docker architecture & commands</li>
-        <li>Build Dockerfiles & images</li>
-        <li>Run containers & manage volumes/networks</li>
-        <li>Docker Compose for multi-container apps</li>
-      </ul>
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fab fa-docker"></i></div>
+      <div class="timeline-content">
+        <h3>Step 3: Docker & Containerization</h3>
+        <ul>
+          <li>Learn Docker architecture & commands</li>
+          <li>Build Dockerfiles & images</li>
+          <li>Run containers & manage volumes/networks</li>
+          <li>Docker Compose for multi-container apps</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="step k8s">
-      <i class="fas fa-network-wired"></i>
-      <h3>Step 4: Kubernetes & Orchestration</h3>
-      <ul>
-        <li>Understand Pods, Deployments, Services</li>
-        <li>ConfigMaps & Secrets</li>
-        <li>Scaling apps with ReplicaSets</li>
-        <li>Hands-on with <code>minikube</code> or <code>kind</code></li>
-      </ul>
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-network-wired"></i></div>
+      <div class="timeline-content">
+        <h3>Step 4: Kubernetes & Orchestration</h3>
+        <ul>
+          <li>Understand Pods, Deployments, Services</li>
+          <li>ConfigMaps & Secrets</li>
+          <li>Scaling apps with ReplicaSets</li>
+          <li>Hands-on with <code>minikube</code> or <code>kind</code></li>
+        </ul>
+      </div>
     </div>
 
-    <div class="step cicd">
-      <i class="fas fa-cogs"></i>
-      <h3>Step 5: CI/CD (Jenkins & GitHub Actions)</h3>
-      <ul>
-        <li>Basics of CI/CD pipelines</li>
-        <li>Setup Jenkins pipelines</li>
-        <li>GitHub Actions workflows (<code>.yml</code>)</li>
-        <li>Automated testing & deployment</li>
-      </ul>
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-cogs"></i></div>
+      <div class="timeline-content">
+        <h3>Step 5: CI/CD (Jenkins & GitHub Actions)</h3>
+        <ul>
+          <li>Basics of CI/CD pipelines</li>
+          <li>Setup Jenkins pipelines</li>
+          <li>GitHub Actions workflows (<code>.yml</code>)</li>
+          <li>Automated testing & deployment</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="step terraform">
-      <i class="fas fa-code"></i>
-      <h3>Step 6: Terraform & IaC</h3>
-      <ul>
-        <li>Terraform basics: providers, resources, variables</li>
-        <li>Write & apply configs (<code>main.tf</code>)</li>
-        <li>Manage state files</li>
-        <li>Provision infra on AWS/GCP</li>
-      </ul>
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-code"></i></div>
+      <div class="timeline-content">
+        <h3>Step 6: Terraform & IaC</h3>
+        <ul>
+          <li>Terraform basics: providers, resources, variables</li>
+          <li>Write & apply configs (<code>main.tf</code>)</li>
+          <li>Manage state files</li>
+          <li>Provision infra on AWS/GCP</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="step monitoring">
-      <i class="fas fa-chart-line"></i>
-      <h3>Step 7: Monitoring & Logging</h3>
-      <ul>
-        <li>Setup Prometheus & Grafana</li>
-        <li>Logs with ELK/EFK stack</li>
-        <li>Cloud monitoring (Stackdriver, CloudWatch)</li>
-        <li>Alerts & dashboards</li>
-      </ul>
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-chart-line"></i></div>
+      <div class="timeline-content">
+        <h3>Step 7: Monitoring & Logging</h3>
+        <ul>
+          <li>Setup Prometheus & Grafana</li>
+          <li>Logs with ELK/EFK stack</li>
+          <li>Cloud monitoring (Stackdriver, CloudWatch)</li>
+          <li>Alerts & dashboards</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="step cloud">
-      <i class="fas fa-cloud"></i>
-      <h3>Step 8: Cloud Platforms (AWS & GCP)</h3>
-      <ul>
-        <li>Basics of AWS (EC2, S3, IAM)</li>
-        <li>Basics of GCP (Compute Engine, GCS, IAM)</li>
-        <li>Deploy apps on cloud</li>
-        <li>Hands-on projects for cloud-native DevOps</li>
-      </ul>
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-cloud"></i></div>
+      <div class="timeline-content">
+        <h3>Step 8: Cloud Platforms (AWS & GCP)</h3>
+        <ul>
+          <li>Basics of AWS (EC2, S3, IAM)</li>
+          <li>Basics of GCP (Compute Engine, GCS, IAM)</li>
+          <li>Deploy apps on cloud</li>
+          <li>Hands-on projects for cloud-native DevOps</li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <section class="form-section">
     <h2>Share Your Suggestions</h2>
     <p>Have ideas or resources to improve this roadmap? Contribute below 👇</p>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScYX4H9lHmnYxxxxxxx/viewform?embedded=true" 
-            width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc6kyhMkA7FaXEajSF0x7xXzqnLhb132RwPpOGKUR_co12QEw/viewform?embedded=true" 
+            width="100%" height="773" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
   </section>
 
   <footer>
